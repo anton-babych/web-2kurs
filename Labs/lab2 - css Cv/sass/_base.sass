@@ -1,0 +1,30 @@
+$white-color: #EAE9F4
+$black-color: #151515
+$dark-grey-color: #3C3B45
+$grey-color: #585858
+$light-grey-color: #A9A9A9
+    
+
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+
+body
+    font-family: "Roboto", sans-serif
+    color: $black-color
+    font-size: 1.6rem
+    background-color: $white-color
+
+.container
+    padding: 2vh 3vw
+    display: grid
+    grid-template-rows: repeat(4, minmax(min-content, 5rem))
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)) 
+    grid-gap: 1vw 1vw
+
+    
+      

@@ -1,0 +1,29 @@
+.trust
+    &__grid
+        padding: 0rem 5rem
+        display: grid
+        grid-gap: 3rem
+        grid-template-columns: repeat(auto-fit, 12rem)
+        justify-content: center
+        grid-auto-rows: 12rem
+        grid-auto-flow: row dense
+        &__item
+            &:nth-of-type(1) 
+                background-image: url(../img/logos/alpha.png)
+            &:nth-of-type(2) 
+                background-image: url(../img/logos/azov.png)
+            &:nth-of-type(3) 
+                background-image: url(../img/logos/foreign.png)
+            &:nth-of-type(4) 
+                background-image: url(../img/logos/guard.png)
+            &:nth-of-type(5) 
+                background-image: url(../img/logos/mvs.png)
+            &:nth-of-type(6) 
+                background-image: url(../img/logos/sbu.png)
+
+
+@media (max-width: 800px)
+    .trust
+        &__grid
+            grid-template-columns: repeat(auto-fit, 8rem)
+            grid-auto-rows: 8rem

@@ -1,0 +1,36 @@
+$light-grey-color: #c2c2c2
+$white-color: #D9D9D9
+$dark-color: #202020
+$ukr-color: linear-gradient(180deg, #7BBFFF 0%, #FFF382 100%)
+
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+@mixin style-link($color)
+    text-decoration: none
+    display: inline-block
+    text-transform: uppercase
+    color: $color
+
+html
+    font-size: 62.5%
+
+body
+    background-color: $dark-color
+    font-family: "Roboto", sans-serif
+    font-weight: 400
+    font-size: 1.6rem
+    letter-spacing: .2rem
+    color: $light-grey-color
+
+.container
+    position: relative
+    display: grid
+    grid-template-rows: min-content minmax(95vh, min-content) 
+
+a
+    text-decoration: none
+
+    

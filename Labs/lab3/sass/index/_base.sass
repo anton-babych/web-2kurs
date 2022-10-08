@@ -1,0 +1,32 @@
+$dark-color: #3b3b3b
+$white-color: #e9e9e9
+$transparent-color: transparent
+$bgColor: #f2f2f2
+
+@mixin style-link($color)
+    text-decoration: none
+    display: inline-block
+    text-transform: lowercase
+    color: $color
+
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+
+body
+    //background-color: $dark-color
+    font-family: "Nunito", sans-serif
+    font-weight: 400
+    font-size: 1.6rem
+    //color: $light-grey-color
+
+.container
+    background-color: $bgColor
+    display: grid
+    grid-template-rows: 1fr 1fr 1fr
+    width: 100%
+    height: 100%

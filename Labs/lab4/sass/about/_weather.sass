@@ -1,0 +1,56 @@
+.weather-container
+    display: grid
+    grid-template-columns: 1fr 2fr
+    grid-template-rows: repeat(3, 120px)
+    background: linear-gradient(109.72deg, #AB407A 0%, #F773BA 0.01%, #9A86FF 100%)
+    justify-items: center
+    align-items: center
+
+    
+.weather
+    grid-row: 1/4
+    margin: 20px
+    backdrop-filter: blur(3px);
+    background-color: rgba(white, 0.1);
+    border: 1px solid rgba(white, 0.2);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(black, 0.25);
+    height: 300px;
+    width: min-content
+    position: relative;
+    display: flex;
+    gap: 1em;
+    padding: 5px 25px;
+    flex-flow: column
+    justify-content: center
+    align-items: center
+
+    &__degrees
+        font-size: 60px
+        font-weight: 200
+    &__icon
+        height: 150px
+        width: 150px
+    &__status
+        font-size: 30px
+
+
+.title-1
+    font-size: 80px
+    font-weight: 400
+
+.title-2
+    font-size: 40px
+    font-weight: 100
+
+.text-holder
+    grid-row: 1/4
+
+.marked
+    font-weight: 400
+
+.warm
+    color: red
+
+.cold
+    color: blue

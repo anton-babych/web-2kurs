@@ -1,0 +1,37 @@
+$bgColor: #f6f6f6
+
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+
+body
+    //background-color: $dark-color
+    font-family: "Nunito", sans-serif
+    font-weight: 400
+    font-size: 1.6rem
+    color: black
+
+.container
+    background-color: $bgColor
+    min-height: 100vh
+    padding: 0px 50px
+
+.image-holder
+    padding-top: 30px
+    margin-bottom: 100px
+    display: flex
+    justify-content: center
+    &__img
+        min-width: 400px
+        min-height: 280px
+        width: 36vw
+        height: 28vw
+        background-image: url("../img/mask.png")
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+

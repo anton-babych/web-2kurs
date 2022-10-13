@@ -89,6 +89,76 @@
         z-index: -1
         transition: all .5s
 
+$fuschia: #ff0081;
+$button-bg: $fuschia;
+$button-text-color: #fff;
+$baby-blue: #f8faff;
+
+.shopbtn
+    transition: all .3s
+    position: relative
+    font-size: 1.5rem
+    font-weight: 500
+    padding: 0.5rem 1rem
+    overflow: hidden
+    border: .1rem solid #000000
+    border-radius: 0.7rem
+    z-index: 1
+
+    @media (max-width: 800px)
+        font-size: 1rem
+        padding: 1rem
+        border: .1rem solid #ffffff
+
+    &:link, &:visited
+        transition: all .3s
+        position: relative
+        z-index: 0
+
+    &_default
+        background: $dark-color
+        &:link, &:visited
+            @include style-link($white-color)
+
+        &::after
+            background: $white-color
+
+        &:hover
+            &:link, &:visited
+                @include style-link($dark-color)
+
+    &_transparent
+        background: $transparent-color
+        &:link, &:visited
+            @include style-link($dark-color)
+
+        &::after
+            background: $dark-color
+
+        &:hover
+            &:link, &:visited
+                @include style-link($white-color)
+
+    &:hover
+        &::after
+            width: 100%
+            font-weight: 1000
+
+    &:active
+        transform: scale(.5)
+
+    &::after
+        content: ""
+        width: 0%
+        height: 100%
+        display: inline-block
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+        transition: all .5s
+    
+
 .animated-down
     animation: up .8s ease-out 0.2s
     animation-fill-mode: backwards

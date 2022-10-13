@@ -30,7 +30,7 @@ export function initGridItems(){
         let gridItemButton = document.createElement("a");
         gridItemButton.textContent = `Додати в кошик`;
         //gridItemButton.src = "#";
-        gridItemButton.classList.add("btn", "btn_default");
+        gridItemButton.classList.add("shopbtn");
         gridItem.append(gridItemButton);
 
         gridItemButton.addEventListener('click', (el) =>{

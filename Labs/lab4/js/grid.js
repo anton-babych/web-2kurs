@@ -28,10 +28,15 @@ export function initGridItems(){
         gridItem.append(gridItemQuantity);
     
         let gridItemButton = document.createElement("a");
-        gridItemButton.textContent = `Додати в кошик`;
+        gridItemButton.innerHTML = `
+            <p class="btn__txt">Додати в кошик</p>
+        `;
+        //gridItemButton.textContent = `Додати в кошик`;
         //gridItemButton.src = "#";
-        gridItemButton.classList.add("shopbtn");
+        gridItemButton.classList.add("btn", "btn_default");
         gridItem.append(gridItemButton);
+        
+       
 
         gridItemButton.addEventListener('click', (el) =>{
             addShoppingCartItem(itemData);

@@ -1,15 +1,22 @@
 $column-size: 20rem
     
-.grid
-    grid-column: 2/3
-    grid-row: 2/3
+//grid
+//    grid-column: 2/3
+//    grid-row: 2/3
+//
+//    display: grid
+//    grid-gap: 1.5rem
+//    grid-template-columns: repeat(auto-fit, $column-size)
+//    grid-auto-rows: min-content
+//    grid-auto-flow: row dense
+//    justify-content: center
 
-    display: grid
-    grid-gap: 1.5rem
-    grid-template-columns: repeat(auto-fit, $column-size)
-    grid-auto-rows: min-content
-    grid-auto-flow: row dense
-    justify-content: center
+.grid 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-auto-rows: 12rem;
+    grid-gap: 16px;
+    grid-auto-flow: dense;
 
 .item
     border: 1px solid gray
@@ -50,19 +57,7 @@ $column-size: 20rem
 
 
     &__details
-        display: flex
-        justify-content: center
-        align-items: center
-        padding: 10px
-        font-size: 1.6rem
-        z-index: 1
-        background: #000000
-        letter-spacing: 1px
-        transition: .5s
-        visibility: hidden
-        opacity: 0
-        @media(max-width: 800px)
-            font-size: 1rem
+        
 
     &:hover &__details
         visibility: visible
@@ -91,4 +86,12 @@ $column-size: 20rem
         //padding: 10%
         color: black
         font-size: 2rem
+
+.item--expanded 
+    grid-column: span 2
+    grid-row: span 1
+
+.item--expanded .card__img 
+    transform: scale(1.03)
+
 

@@ -1,5 +1,3 @@
-//148c775a13c20825268d5d6f2a1af42b
-
 const link = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q=Kyiv&lang=ua&appid=148c775a13c20825268d5d6f2a1af42b';
 
 fetch(link)

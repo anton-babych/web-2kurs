@@ -1,0 +1,64 @@
+{
+    "cards":[
+        {
+            "id": "0",
+            "name": "Грушево-яблучний",
+            "color": "#98d55b",
+            "image_link": "imgs/forCards/grusha.png"
+        },
+        {
+            "id": "1",
+            "name": "Яблучний",
+            "color": "#5bd5a2",
+            "image_link": "imgs/forCards/yabluko.png"
+        },
+        {
+            "id": "2",
+            "name": "Томатний",
+            "color": "#d55b73",
+            "image_link": "imgs/forCards/tomato.png"
+        },
+        {
+            "id": "3",
+            "name": "Овочевий",
+            "color": "#5bd5bf",
+            "image_link": "imgs/forCards/ovoch.png"
+        },
+        {
+            "id": "4",
+            "name": "Мультифруктовий",
+            "color": "#76af14",
+            "image_link": "imgs/forCards/multi.png"
+        },
+        {
+            "id": "5",
+            "name": "Яйва",
+            "color": "#5937e1",
+            "image_link": "imgs/forCards/aiva.png"
+        },
+        {
+            "id": "6",
+            "name": "Гранат",
+            "color": "#791041",
+            "image_link": "imgs/forCards/granat.png"
+        },
+        {
+            "id": "7",
+            "name": "Вишня",
+            "color": "#500229",
+            "image_link": "imgs/forCards/cherry.png"
+        },
+        {
+            "id": "8",
+            "name": "Персик",
+            "color": "#d48600",
+            "image_link": "imgs/forCards/persik.png"
+        },
+        {
+            "id": "9",
+            "name": "Слива",
+            "color": "#8a00d4",
+            "image_link": "imgs/forCards/sliva.png"
+        }
+    ]
+}

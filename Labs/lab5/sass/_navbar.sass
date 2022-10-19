@@ -1,0 +1,58 @@
+$outline-color: #9e6690
+$outline-size: 2px
+
+.nav
+    z-index: 1
+    padding-left: 2rem
+    padding-top: 2rem
+    position: fixed
+    display: grid
+    grid-template-areas: "logo horizontal" "vertical span"
+    grid-template-columns: 8rem 90vw
+    grid-template-rows: 8rem 80vh
+
+    &__span
+        visibility: hidden
+        grid-area: span
+        pointer-events: none
+
+    &__logo
+        border-left: $outline-size solid $outline-color
+        border-top: $outline-size solid $outline-color
+        grid-area: logo
+        & .logo_img
+            padding: 10%
+
+    &__vertical
+        border: $outline-size solid $outline-color
+        grid-area: vertical
+
+    &__horizontal
+        border: $outline-size solid $outline-color
+        grid-area: horizontal
+
+        //display: grid
+        //grid-template-areas: ". home history products . contact"
+        //grid-template-columns: auto repeat(3, 8rem) auto 10rem
+        //grid-gap: 1rem
+
+        display: flex
+        justify-content: space-between
+        padding: 0px 200px
+        
+        & .home_btn
+            grid-area: home
+        & .history_btn
+            grid-area: history
+        & .products_btn
+            grid-area: products
+        & .contact_btn
+            grid-area: contact
+
+.nav-btn
+    font-size: 2rem
+    color: #bfbfbf
+    text-decoration: none
+    align-self: center
+
+    

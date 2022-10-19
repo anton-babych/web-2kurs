@@ -1,0 +1,49 @@
+$dark-magenta: #8B008B
+$very-dark-magenta: #300030
+
+.main
+    padding-left: 10rem
+    background: linear-gradient(180deg, $dark-magenta 0%, $very-dark-magenta 100%)
+
+    &__titles
+        padding-left: 0rem
+        padding-top: 8rem
+
+    &__title-back
+        font-size: 17vw
+        font-weight: 700
+        text-transform: uppercase
+        color: #580058
+        left: 10px
+
+    &__title-1
+        font-size: 4vw
+        font-weight: 500
+        color: #eaeaea
+        transform: translateY(-10rem)
+        padding-left: 15rem
+
+    &__title-2
+        font-size: 2rem
+        font-weight: 100
+        color: #bebebe
+        transform: translateY(-10rem)
+        padding-left: 15rem
+
+    &__btn
+        width: 15vw
+        height: 15vw
+        transform: translate(50vw, -10rem)
+        &__img
+            @include imageInDiv(url(../imgs/downButton.png))
+
+    &__img-holder
+        position: absolute
+        top: 10rem
+        right: 5rem
+
+        width: 15vw
+        height: 40vw
+
+        &__img
+            @include imageInDiv(url(../imgs/sok.jpg))

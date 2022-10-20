@@ -1,0 +1,52 @@
+@mixin xcenter
+    left: 50%
+    transform: translateX(-50%)
+    position: absolute
+
+    
+.history
+    position: relative
+    background-color: #5e0018
+    height: 150vh
+
+    &__section
+        position: absolute
+        color: white
+        width: 30rem
+
+.section-left
+    right: 10rem
+    text-align: right
+
+.section-right
+    left: 10rem
+    text-align: left
+
+.date
+    font-size: 2rem
+    position: absolute
+    left: 46%
+    color: #eee
+
+.line
+    @include xcenter
+    height: 150vh
+    width: 0.25rem
+    background-color: white
+    position: absolute
+    left: 50%
+
+.circle
+    @include xcenter
+    height: 2rem
+    width: 2rem
+    border-radius: 50%
+    background-color: white
+
+.static-circle
+    transform: translateY(-50%)
+    @include xcenter
+    height: 2rem
+    width: 2rem
+    border-radius: 50%
+    background-color: grey

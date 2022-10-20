@@ -7,34 +7,32 @@ $outline-size: 2px
     padding-top: 2rem
     position: fixed
     display: grid
-    grid-template-areas: "logo horizontal" "vertical span"
-    grid-template-columns: 8rem 90vw
-    grid-template-rows: 8rem 80vh
+    grid-template-areas: "logo horizontal" "logo ."
+    grid-template-columns: 10rem 90vw
+    grid-template-rows: repeat(2, 5rem)
 
-    &__span
-        visibility: hidden
-        grid-area: span
-        pointer-events: none
 
     &__logo
-        border-left: $outline-size solid $outline-color
-        border-top: $outline-size solid $outline-color
-        grid-area: logo
-        & .logo_img
-            padding: 10%
-
-    &__vertical
         border: $outline-size solid $outline-color
-        grid-area: vertical
+        grid-area: logo
+        display: flex
+        flex-flow: column
+        justify-content: space-around
+        align-items: center
+
+        & .logo_img
+            align-self: center
+            justify-self: center
+            width: 80%
+            height: 90%
+            background-image: url(../imgs/logosok.png)
+            background-position: center; 
+            background-repeat: no-repeat;
+            background-size: cover;
 
     &__horizontal
         border: $outline-size solid $outline-color
         grid-area: horizontal
-
-        //display: grid
-        //grid-template-areas: ". home history products . contact"
-        //grid-template-columns: auto repeat(3, 8rem) auto 10rem
-        //grid-gap: 1rem
 
         display: flex
         justify-content: space-between

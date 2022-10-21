@@ -4,19 +4,19 @@ const tl = gsap.timeline();
 
 ScrollTrigger.defaults({
     toggleActions: "restart pause resume none",
-    //markers: true,
 });
+
+const maxHeight = "600px";
 
 var pinTween = tl.to(".main", {
     scrollTrigger: {
         trigger: ".main",
         start: "0px 0px",
-        end: "1000px 100px",
+        end: `${maxHeight} 100px`,
         scrub: true,
         pin: true,
         id: "pin"
     },
-    duration: 3,
 });
 
 var juiceTween = tl.to(".main__img-holder", {
@@ -28,19 +28,17 @@ var juiceTween = tl.to(".main__img-holder", {
         id: "juice"
     },
     left: 80,
-    duration: 3,
 });
 
 var nameTween = tl.to(".main__title-back", {
     scrollTrigger: {
         trigger: ".main__title-back",
         start: "0px 0px",
-        end: "1000px 100px",
+        end: `${maxHeight} 100px`,
         scrub: 1,
         id: "back-name",
     },
     x: 250,
-    duration: 3,
 });
 
 var titleTween = tl.to(".title", {
@@ -52,9 +50,18 @@ var titleTween = tl.to(".title", {
         id: "title"
     },
     opacity: 0,
-    duration: 3,
 });
 
+var titleTween = tl.from(document.querySelector(".main__about"), {
+    scrollTrigger: {
+        start: "300px 0px",
+        end: `${maxHeight} 100px`,
+        scrub: 0.5,
+        id: "title",
+    },
+    opacity: 0,
+    x: "-=200",
+});
 
 //
 

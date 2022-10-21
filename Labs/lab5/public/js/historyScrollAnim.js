@@ -28,19 +28,19 @@ function initHistory(){
         instantiateLilCircle(historyDatas[i], i % 2==0);
     }
 
-    let sections = gsap.utils.toArray(".history__section");
-
-    gsap.from(sections, {
-        scaleX: 0,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".history",
-          start: "0% 50%",
-          end:"90% 50%",
-          scrub: 1,
-        },
-        stagger: 1,
-      });
+    //let sections = gsap.utils.toArray(".history__section");
+//
+    //gsap.from(sections, {
+    //    scaleX: 0,
+    //    ease: "none",
+    //    scrollTrigger: {
+    //      trigger: ".history",
+    //      start: "0% 50%",
+    //      end:"90% 50%",
+    //      scrub: 1,
+    //    },
+    //    stagger: 1,
+    //  });
 }
 
 
@@ -58,7 +58,25 @@ function instantiateLilCircle(data, isEven){
     circle.style.top = `${-pos}px`;
     historyLayout.append(circle);
 
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: circle.children[0],
+            start: "-50% 50%",
+            end:"50% 50%",
+            scrub: 1,
+            //markers: true,
+        }, 
+    });
+    
+    tl.from(circle, {
+        opacity: 0.5,
+        scale: 0.9,
+    });
 
+    tl.to(circle, {
+        opacity: 0.5,
+        scale: 0.9,
+    });
 }
 
 function getDatePos(year){
